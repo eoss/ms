@@ -886,6 +886,19 @@ video {
     margin-left: 35px;
     color: #ae8648;
 }
+.activated .bt-accordion-itemBg {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    opacity: 1;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center center;
+    cursor: pointer;
+}
 /* Wine List ----------------------------------------*/
 #wine {
     text-align: center;
@@ -927,6 +940,7 @@ h5 {
 /* Wine List END ----------------------------------------*/
 .activated {
     display: block;
+    cursor: default;
 }
 .deactivated {
     white-space: normal;

@@ -13,13 +13,14 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery.datepicker.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/SmoothScroller.js"></script>
     <script src="js/jquery.collapsible.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
         function initialize() {
-            var myLatlng = new google.maps.LatLng(26.3758585,-81.808685,19);
+            var myLatlng = new google.maps.LatLng(26.376051,-81.808703,17);
             var mapOptions = {
                 zoom: 18,
                 center: myLatlng,
@@ -37,14 +38,6 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
-    <!--<script src="js/jquery.smoothwheel.js"></script>-->
-    <!--<script>-->
-
-        <!--$(document).ready(function(){-->
-            <!--$("body").smoothWheel()-->
-        <!--});-->
-
-    <!--</script>-->
 
 </head>
 <body>
@@ -67,7 +60,6 @@
                             <a href="https://www.facebook.com/manhattan.steakhouse.7?fref=ts" class="smoothScroll"><img class="animated zoomInUp" src="img/fb.png" alt="fb"></a>
                         </div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -80,11 +72,11 @@
 				</div>
                 <div id='cssmenu' class="animated fadeInRightBig">
                     <ul>
-                        <li class='active'><a href='#top' class='smoothScroll'><span>Home</span></a></li>
+                        <li class='active'><a href='#top' class='smoothScroll animated fadeInRightBig'><span>Home</span></a></li>
                         <li><a href='#menu' class='smoothScroll'><span>Our Menu</span></a></li>
-                        <li><a href='#accordion' class='smoothScroll'><span>Wine List</span></a></li>
+                        <li><a href='#accordion' class='smoothScroll animated fadeInRightBig'><span>Wine List</span></a></li>
                         <li><a href='http://www.opentable.com/manhattan-steak-house-reservations-bonita-springs?rtype=ism&restref=80941' class='smoothScroll'><span>OpenTable</span></a></li>
-                        <li class='last'><a href='#contact' class='smoothScroll'><span>Contact Us</span></a></li>
+                        <li class='last'><a href='#contact' class='smoothScroll animated fadeInRightBig'><span>Contact Us</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -94,17 +86,17 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <!--<div class="parallax-bg" style="background-image:url(img/slider/slider1.jpg)" data-swiper-parallax="-23%"></div>-->
-                    <div class="swiper-wrapper animated fadeInUp">
+                    <div class="swiper-wrapper">
                             <div class="swiper-slide slider1 parallax-bg">
                                 <div class="wrapper">
-                                    <div class="title" data-swiper-parallax="900">Prime Dry Aged Steak</div>
+                                    <div class="title animated fadeInDownBig" data-swiper-parallax="900">Prime Dry Aged Steak</div>
                                     <!--<div class="subtitle" data-swiper-parallax="-200">VIEW OUR MENU</div>-->
-                                    <div class="text" data-swiper-parallax="-900">
+                                    <div class="text animated fadeInUpBig" data-swiper-parallax="-900">
                                         <p>Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and sizzling platters up to 1800 degrees,
                                             big selection of fresh seafood and other.</p>
                                     </div>
-                                    <div class="buton" data-swiper-parallax="10000"><a href="#menu" class="smoothScroll">View Our Menu</a></div>
-                                    <div class="pic" data-swiper-parallax="-5000"><img src="img/slider/png2.png" alt="pic"/></div>
+                                    <div class="button animated fadeInLeftBig" data-swiper-parallax="10000"><a href="#menu" class="smoothScroll">View Our Menu</a></div>
+                                    <div class="pic animated fadeInRightBig" data-swiper-parallax="-5000"><img src="img/slider/png2.png" alt="pic"/></div>
                                 </div>
                             </div>
                             <div class="swiper-slide slider2 parallax-bg">
@@ -114,7 +106,7 @@
                                     <div class="text" data-swiper-parallax="-900">
                                         <P>Private Party available from 20 to 120 persons. Please call us for details.</P>
                                     </div>
-                                    <div class="buton" data-swiper-parallax="-10000"><a href="#" class="smoothScroll">Private Party</a></div>
+                                    <div class="button" data-swiper-parallax="-10000"><a href="#video" class="smoothScroll">Our Video</a></div>
                                     <div class="pic winegirl" data-swiper-parallax="5000"><img src="img/slider/png1.png" alt="pic"/></div>
                                 </div>
                             </div>
@@ -125,7 +117,7 @@
                                     <div class="text" data-swiper-parallax="-900">
                                         <p>Enjoy the finest cuts of meat and fresh catches such as grouper, tuna and jumbo Maine lobster.</p>
                                     </div>
-                                    <div class="buton" data-swiper-parallax="10000"><a href="#" class="smoothScroll">Enjoy in our restaurant</a></div>
+                                    <div class="button" data-swiper-parallax="10000"><a href="#articles" class="smoothScroll">Enjoy in our restaurant</a></div>
                                     <div class="pic" id="girl" data-swiper-parallax="-5000"><img src="img/slider/png3.png" alt="pic"/></div>
                                 </div>
                             </div>
@@ -136,7 +128,7 @@
                                     <div class="text" data-swiper-parallax="-900">
                                         <P>Private Party available from 20 to 120 persons. Please call us for details.</P>
                                     </div>
-                                    <div class="buton" data-swiper-parallax="-10000"><a href="#" class="smoothScroll">Private Party</a></div>
+                                    <div class="button" data-swiper-parallax="-10000"><a href="#title-message" class="smoothScroll">Send a Message</a></div>
                                     <div class="pic winegirl" data-swiper-parallax="5000"><img src="img/slider/png1.png" alt="pic"/></div>
                                 </div>
                             </div>
@@ -144,78 +136,78 @@
                 <!-- Add Pagination -->
                 <!--<div class="swiper-pagination swiper-pagination-white"></div>-->
                 <!-- Add Navigation -->
-                <div class="swiper-button-prev swiper-button-white"></div>
-                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev animated slideInDown swiper-button-white"></div>
+                <div class="swiper-button-next animated slideInDown swiper-button-white"></div>
             </div>
         </section>
         <!-- Swiper END -->
         <!-- Articles -->
         <section id="articles">
             <div class="wrapper cf">
-                <div id="title-articles">
-                    <h1 class="animated fadeInDown">Welcome to Our Restaurant</h1>
-                    <div class="bd1 animated fadeIn">
-                        <img class="animated fadeIn" src="img/flower.png" alt="flw"/>
+                <div id="title-articles" class="passive">
+                    <h1 class="animated">Welcome to Our Restaurant</h1>
+                    <div class="bd1 animated" id="bd">
+                        <img src="img/flower.png" alt="flw"/>
                     </div>
-                    <p class="animated fadeInUp">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
+                    <p class="animated">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
                         <br/>
                         sizzling platters up to 1800 degrees, big selection of fresh seafood and other.</p>
                 </div>
-                <div class="tri">
-                    <div class="articles animated slideInLeft" id="article1">
+                <div class="tri passive">
+                    <div class="articles animated" id="article1">
                         <img src="img/articles/rump.jpg" alt="table"/>
                         <h3>Have a Look <br/> at Our Menu</h3>
                         <p>Enjoy the finest cuts of meat and fresh catches such as grouper,
                             tuna and jumbo Maine lobster. Our dinner price range from $18 to $34.</p>
-                        <div class="buton"><a href="#menu" class="smoothScroll">Our Menu</a></div>
+                        <div class="button"><a href="#menu" class="smoothScroll">Our Menu</a></div>
                     </div>
 
-                    <div class="articles animated slideInUp" id="article2">
+                    <div class="articles animated" id="article2">
                         <img src="img/articles/wines.jpg" alt="table"/>
                         <h3>Manhattan Steakhouse <br/> Wines</h3>
                         <p>We feature an extensive selection of fine wines from many regions all over the world.
                             Try our house wines or other from our wine list.</p>
-                        <div class="buton"><a href="#accordion" class="smoothScroll">Wine List</a></div>
+                        <div class="button"><a href="#accordion" class="smoothScroll">Wine List</a></div>
                     </div>
 
-                    <div class="articles animated slideInRight" id="article3">
+                    <div class="articles animated" id="article3">
                         <img src="img/articles/Reserved-sign.jpg" alt="table"/>
                         <h3>Book Your <br/> Table Online</h3>
                         <p>Make reservation with most popular reservation system -
                             Open Table and enjoy in our restaurant ambient and nice atmosphere.</p>
-                        <div class="buton"><a href="http://www.opentable.com/manhattan-steak-house-reservations-bonita-springs?rtype=ism&restref=80941" class="smoothScroll">OpenTable</a></div>
+                        <div class="button"><a href="http://www.opentable.com/manhattan-steak-house-reservations-bonita-springs?rtype=ism&restref=80941" class="smoothScroll">OpenTable</a></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Articles END -->
         <!-- Video -->
-        <section id="video">
+        <section id="video" class="passive parallax-window" data-parallax="scroll" data-image-src="img/bgd-video.jpg">
             <div id="title-video">
-                <h1 class="animated fadeInDown">Our Video</h1>
-                <div class="bd1 animated fadeIn">
-                    <img class="animated fadeIn" src="img/flower.png" alt="flw"/>
+                <h1 class="animated">Our Video</h1>
+                <div class="bd1 animated" id="bd2">
+                    <img class="animated" src="img/flower.png" alt="flw"/>
                 </div>
             </div>
-            <video controls class="animated zoomInDown">
+            <video controls class="animated">
                 <source src="manhattansteakhouse_rev.mp4" type="video/mp4">
             </video>
         </section>
         <!-- Video END -->
         <!-- Our Menu -->
         <section id="menu">
-            <div id="title-menu">
-                <h1 class="animated fadeInDown">Our Menu</h1>
-                <div class="bd1 animated fadeIn">
-                    <img class="animated fadeIn" src="img/flower1.png" alt="flw"/>
+            <div id="title-menu" class="passive">
+                <h1 class="animated">Our Menu</h1>
+                <div class="bd1 animated" id="bd3">
+                    <img class="animated" src="img/flower1.png" alt="flw"/>
                 </div>
             </div>
         </section>
         <!-- Accordion -->
-        <section id="accordion">
+        <section id="accordion" class="passive">
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Wine List</h3>
+                <div class="bt-accordion deactivated" id="wineList">
+                    <h3 class="animated">Wine List</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/wine.jpg')">
                         <h3>Wine List</h3>
                     </div>
@@ -256,8 +248,8 @@
                 </div>
             </div>
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Appetizers - Salads</h3>
+                <div class="bt-accordion deactivated" id="salads">
+                    <h3 class="animated">Appetizers - Salads</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/salad.jpg')">
                         <h3>Appetizers - Salads</h3>
                     </div>
@@ -288,8 +280,8 @@
                 </div>
             </div>
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Classics House Specialties</h3>
+                <div class="bt-accordion deactivated" id="classics">
+                    <h3 class="animated">Classics House Specialties</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/main.jpg')">
                         <h3>Classics House Specialties</h3>
                     </div>
@@ -314,8 +306,8 @@
                 </div>
             </div>
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Entrees - Fish</h3>
+                <div class="bt-accordion deactivated" id="fish">
+                    <h3 class="animated">Entrees - Fish</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/fish.jpg')">
                         <h3>Entrees - Fish</h3>
                     </div>
@@ -348,8 +340,8 @@
                 </div>
             </div>
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Side Dishes</h3>
+                <div class="bt-accordion deactivated" id="sideDishes">
+                    <h3 class="animated">Side Dishes</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/side.jpg')">
                         <h3>Side Dishes</h3>
                     </div>
@@ -376,8 +368,8 @@
                 </div>
             </div>
             <div>
-                <div class="bt-accordion deactivated">
-                    <h3>Desserts</h3>
+                <div class="bt-accordion deactivated" id="desserts">
+                    <h3 class="animated">Desserts</h3>
                     <div class="bt-accordion-itemBg" style="background:url('img/menu/dessert.jpg')">
                         <h3>Desserts</h3>
                     </div>
@@ -412,47 +404,48 @@
         <!-- Contact Us -->
         <section id="contact">
             <div class="wrapper">
-                <div id="title-contact">
-                    <h1 class="animated fadeInDown">Contact Us</h1>
-                    <div class="bd1 animated fadeIn">
-                        <img class="animated fadeIn" src="img/flower.png" alt="flw"/>
+                <div id="title-contact" class="passive">
+                    <h1 class="animated">Contact Us</h1>
+                    <div class="bd1 animated" id="bd4">
+                        <img class="animated" src="img/flower.png" alt="flw"/>
                     </div>
-                    <p class="animated fadeInUp">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
+                    <p class="animated">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
                         <br/>
                         sizzling platters up to 1800 degrees, big selection of fresh seafood and other.</p>
                 </div>
             </div>
         </section>
-        <section id="contactform">
+        <section id="contactform" class="passive">
             <div class="wrapper">
-                <div id="googleMap" data-map-infowindow="Manhattan Steakhouse" style="width:99.9%; height:400px;"></div>
+
+                <div id="googleMap" class="animated" data-map-infowindow="Manhattan Steakhouse" style="width:99.9%; height:400px;"></div>
 
                 <div id="title-message">
-                    <h1 class="animated fadeInDown">Send a Message</h1>
-                    <div class="bd1 animated fadeIn">
-                        <img class="animated fadeIn" src="img/flower.png" alt="flw"/>
+                    <h1 class="animated">Send a Message</h1>
+                    <div class="bd1 animated" id="bd5">
+                        <img class="animated" src="img/flower.png" alt="flw"/>
                     </div>
-                    <p class="animated fadeInUp">Do you have anything in your mind to tell us? Please don't hesitate to get in touch
+                    <p class="animated">Do you have anything in your mind to tell us? Please don't hesitate to get in touch
                         to us via our contact form.</p>
                 </div>
                 <div data-role="content" id="cont">
                     <form name="htmlform" method="post" action="mail.php">
-                        <label for="first_name">* First Name :</label>
-                        <input type="text" name="first_name" placeholder="Your First Name here...">
+                        <label class="animated" for="first_name">* First Name :</label>
+                        <input class="animated" type="text" name="first_name" placeholder="Your First Name here...">
 
-                        <label for="last_name">* Last Name :</label>
-                        <input type="text" name="last_name" placeholder="Your Last Name here...">
+                        <label class="animated" for="last_name">* Last Name :</label>
+                        <input class="animated" type="text" name="last_name" placeholder="Your Last Name here...">
 
-                        <label for="email">* E-mail :</label>
-                        <input type="text" name="email" placeholder="Your E-mail here...">
+                        <label class="animated" for="email">* E-mail :</label>
+                        <input class="animated" type="text" name="email" placeholder="Your E-mail here...">
 
-                        <label for="telephone">Phone :</label>
-                        <input type="text" name="telephone" placeholder="Your Phone Number here...">
+                        <label class="animated" for="telephone">Phone :</label>
+                        <input class="animated" type="text" name="telephone" placeholder="Your Phone Number here...">
 
-                        <label for="messages">* Message :</label>
-                        <textarea name="messages" placeholder="Your Message here..."></textarea>
-                        <p>(*) Required</p>
-                        <input type="submit" value="Submit" id="submit">
+                        <label class="animated" for="messages">* Message :</label>
+                        <textarea class="animated" name="messages" placeholder="Your Message here..."></textarea>
+                        <p class="animated" >(*) Required</p>
+                        <input class="animated" type="submit" value="Submit" id="submit">
                     </form>
                 </div>
             </div>
@@ -461,17 +454,17 @@
 
         <!-- Footer -->
         <footer>
-            <div class="wrapper">
+            <div class="wrapper passive" id="footer">
                 <div id="social">
                     <a href="https://www.facebook.com/manhattan.steakhouse.7?fref=ts" class="smoothScroll">
-                        <img class="animated zoomInUp" src="img/fb.png" alt="fb">
+                        <img class="animated" src="img/fb.png" alt="fb">
                     </a>
                 </div>
-                <div id="logo-container-footer" class="animated fadeInLeftBig">
-                    <a href="#top" class="smoothScroll"><h1>Manhattan Steakhouse</h1></a>
+                <div id="logo-container-footer">
+                    <a href="#top" class="smoothScroll"><h1 class="animated">Manhattan Steakhouse</h1></a>
                 </div>
                 <div id="copyright">
-                    <p>Copyright © 2015 MobileGrows. All rights reserved.</p>
+                    <p class="animated">Copyright © 2015 MobileGrows. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -496,6 +489,26 @@
         parallax: true,
         speed: 1300
     });
+    </script>
+    <!-- To Top JS -->
+    <script src="js/easing.js" type="text/javascript"></script>
+    <!-- UItoTop plugin -->
+    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+    <!-- Starting the plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear'
+             };
+             */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
     </script>
 </body>
 </html>

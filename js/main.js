@@ -2,9 +2,14 @@ $(document).ready(function() {
 
 	animationHover('#logo-container h1', 'pulse');
 
-	animationClick('.button', 'rotateOut');
+	animationClick('.button', 'rubberBand');
 
     accordionClick ('.deactivated');
+    accordionClick ('.deactivated1');
+    accordionClick ('.deactivated2');
+    accordionClick ('.deactivated3');
+    accordionClick ('.deactivated4');
+    accordionClick ('.deactivated5');
 
     function animationHover(element, animation) {
         element = $(element);
@@ -42,10 +47,6 @@ $(document).ready(function() {
                 element.toggleClass('activated', {
                     animate: true
                 });
-                //wait for animation to finish before removing classes
-                //window.setTimeout(function() {
-                //    element.removeClass('activated');
-                //}, 20000);
             }
         );
     }
@@ -53,6 +54,15 @@ $(document).ready(function() {
     $(window).scroll(function(event) {
 
         var y = $(this).scrollTop();
+
+        if (y >= 50) {
+            $('header').addClass('head');
+            $('header').removeClass('head1');
+        }
+        if (y < 50) {
+            $('header').addClass('head1');
+            $('header').removeClass('head');
+        }
 
         if (y >= 300) {
             $('#title-articles').addClass('active');
@@ -69,18 +79,19 @@ $(document).ready(function() {
         }
 
         if (y >= 1000) {
-            $('#video').addClass('active');
+            $('#title-video').addClass('active');
             $('#video h1').addClass('fadeInDown');
             $('#bd2').addClass('bounceInUp');
         }
         if (y >= 1200) {
             $('#video video').addClass('zoomInUp');
+            $('video').addClass('active');
         }
 
         if (y >= 1900) {
             $('#title-menu').addClass('active');
             $('#menu h1').addClass('zoomInDown');
-            $('#bd3').addClass('fadeIn');
+            $('#bd3').addClass('bounceInUp');
             $('#bd3 img').addClass('bounceIn');
         }
 
@@ -110,8 +121,11 @@ $(document).ready(function() {
             $('#title-contact h1').addClass('zoomInLeft');
         }
         if (y >= 3350) {
-            $('#bd4').addClass('fadeIn');
+            $('#bd4 img').addClass('active');
             $('#bd4 img').addClass('bounceIn');
+            $('#bd4').addClass('bounceInUp');
+            $('#bd4').addClass('active');
+            $('#title-contact p').addClass('active');
             $('#title-contact p').addClass('zoomInRight');
         }
 
@@ -120,13 +134,15 @@ $(document).ready(function() {
             $('#googleMap').addClass('rotateIn');
         }
         if (y >= 4150) {
-            $('#bd5').addClass('fadeIn');
+            $('#bd5').addClass('bounceInUp');
             $('#bd5 img').addClass('bounceIn');
+            $('#title-message').addClass('active');
             $('#title-message h1').addClass('rotateInDownRight');
             $('#title-message p').addClass('rotateInUpLeft');
         }
 
         if (y >= 4300) {
+            $('#cont').addClass('active');
             $('#cont label').addClass('fadeInRightBig');
             $('#cont input').addClass('fadeInLeftBig');
         }
@@ -135,13 +151,12 @@ $(document).ready(function() {
             $('#cont p').addClass('fadeInLeftBig');
         }
 
-        if (y >= 4480) {
+        if (y >= 4400) {
             $('#footer').addClass('active');
-            $('#footer h1').addClass('rotateIn');
-            $('#footer p').addClass('rotateIn');
-            $('#footer img').addClass('rotateIn');
+            //$('#footer h1').addClass('rotateIn');
+            $('#footer p').addClass('fadeInRightBig');
+            $('#footer img').addClass('fadeInLeftBig');
         }
-
 
     });
 

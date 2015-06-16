@@ -16,7 +16,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 margin: 0;
@@ -28,7 +28,7 @@ vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */ 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
 display: block;
 }
 body {
@@ -157,6 +157,9 @@ p {
 header {
 	background: #ffffff;
     border-bottom: 1px solid #e4e4e4;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 #logo-container h1 {
     font-family: 'Great Vibes', cursive;
@@ -171,6 +174,19 @@ header {
     -moz-animation-duration: 1s;
     -moz-animation-delay: 0s;
     -moz-animation-iteration-count: infinite;
+}
+.head {
+    margin-top: -38px !important;
+}
+.head1 {
+    margin-top: 0 !important;
+}
+.head #logo-container h1{
+    padding: 10px 0 0 !important;
+    font-size: 37px !important;
+}
+.head #cssmenu {
+    padding: 0 !important;
 }
 /* Menu ------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
@@ -211,7 +227,7 @@ header {
     color: #333333;
     text-decoration: none;
     display: block;
-    padding: 15px 12px;
+    padding: 15px 18px;
     font-weight: 700;
     font-size: 14px;
     position: relative;
@@ -296,7 +312,7 @@ header {
 /*}*/
 @media all and (max-width: 1024px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     #logo-container h1 {
-        padding: 5%;
+        padding: 2%;
     }
     #cssmenu {
         padding: 0;
@@ -360,6 +376,7 @@ header {
     #cssmenu #menu-button {
         display: block;
         padding: 0;
+        background-color: #444;
         color: #000000;
         cursor: pointer;
         font-size: 12px;
@@ -368,7 +385,7 @@ header {
     #cssmenu #menu-button::before {
         content: '';
         position: relative;
-        bottom: 70px;
+        bottom: 35px;
         right: 20px;
         left: 93%;
         display: block;
@@ -380,7 +397,7 @@ header {
     #cssmenu #menu-button::after {
         content: '';
         position: relative;
-        bottom: 66px;
+        bottom: 40px;
         right: 20px;
         left: 93%;
         display: block;
@@ -454,6 +471,14 @@ header {
         left: 50%;
     }
 }
+@media screen and (max-width: 1070px){
+    .bt-menu {
+        width: 98% !important;
+    }
+    .right {
+        float: none !important;
+    }
+}
 @media screen and (max-width: 960px){
     .swiper-slide .title {
         font-size: 3em !important;
@@ -503,7 +528,7 @@ header {
     .pic {
         bottom: 20% !important;
     }
-    .buton {
+    .button {
         font-size: 11px !important;
     }
 }
@@ -554,7 +579,25 @@ header {
 
     h4 {
         font-size: 30px !important;
+        padding-top: 77px;
 
+    }
+    .head {
+        margin-top: -64px !important;
+    }
+    .head #logo-container h1, .head #cssmenu {
+        padding: 9px 0 0 0 !important;
+    }
+    .bt-accordion h3 {
+        font-size: 45px !important;
+    }
+    video {
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 600px){
+    h4 {
+        font-size: 24px !important;
     }
 }
 /* Media Tags END -----------------------------------------------*/
@@ -1008,11 +1051,55 @@ h5 {
     margin-left: 35px;
     color: #ae8648;
 }
+.bt-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bt-container .bt-menu {
+    margin-right: 1.5%;
+    margin-left: 1%;
+}
+.bt-menu {
+    float: left;
+    width: 46.75%;
+    margin-bottom: 30px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 0 0 #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bt-menu-item h5{
+    font-style: italic;
+    font-size: 22px;
+    color: #464646;
+    margin: 16px 0 8px 0;
+    line-height: 1;
+}
+.bt-menu-item p {
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 11px;
+}
+.right {
+    float: right;
+}
+.center {
+    width: 96.99%;
+}
+.pt {
+    padding-top: 35%;
+}
 /* Wine List END ----------------------------------------*/
 .activated {
     display: block;
     cursor: default;
 }
+/*.activated .bt-accordion-itemBg h3 {*/
+    /*display: none;*/
+/*}*/
 .deactivated {
     white-space: normal;
 }
@@ -1125,6 +1212,12 @@ footer {
     color: #fff;
     font-size: 35px;
     padding: 3%;
+    /*-webkit-animation-duration: 1s;*/
+    /*-webkit-animation-delay: 0s;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+    /*-moz-animation-duration: 1s;*/
+    /*-moz-animation-delay: 0s;*/
+    /*-moz-animation-iteration-count: infinite;*/
 }
 #copyright p {
     color: #444;

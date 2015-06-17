@@ -106,6 +106,15 @@ p {
     padding-left: 5px;
     padding-right: 5px;
 }
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #AE8648;
+}
+
+::selection {
+    color: #fff;
+    background: #AE8648;
+}
 /*Top ----------------------------------*/
 #top{
 	background: #fff;
@@ -765,7 +774,7 @@ h1 {
     margin-right: -163px;
 }
 .articles {
-    display: block;
+    display: inline-block;
 }
 #title-articles {
     margin-bottom: 35px;

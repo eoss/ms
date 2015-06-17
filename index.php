@@ -191,6 +191,9 @@
             </div>
             <video controls class="animated passive">
                 <source src="manhattansteakhouse_rev.mp4" type="video/mp4">
+                <source src="manhattansteakhouse_rev.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+                <source src="manhattansteakhouse_rev.ogv" type="video/ogg;">
+                Video not supported.
             </video>
         </section>
         <!-- Video END -->

@@ -85,6 +85,8 @@ body{
 	line-height: 1;
     -webkit-font-smoothing: antialiased;
     color: #444444;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -1254,7 +1256,7 @@ div#social {
     height: 80px;
     border:none;
     text-indent:100%;
-    background:url(../img/anchor_white.png) no-repeat left top;
+    background:url(../img/anchor.png) no-repeat left top;
 }
 #toTopHover {
     /*background:url(../img/anchor_white.png) no-repeat left -51px;*/

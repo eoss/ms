@@ -5,39 +5,16 @@
     <meta name="author" content="Emir Balić">
 	<meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/swiper.css">
-	<link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="js/script.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/SmoothScroller.js"></script>
-    <script src="js/jquery.collapsible.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var myLatlng = new google.maps.LatLng(26.376051,-81.808703,17);
-            var mapOptions = {
-                zoom: 18,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.HYBRID
-            }
-            var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: 'Manhattan Steakhouse'
-            });
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
+    <script src="js/script.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/SmoothScroller.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
 
 </head>
 <body>
@@ -190,9 +167,7 @@
                 </div>
             </div>
             <video controls class="animated passive">
-                <source src="manhattansteakhouse_rev.mp4" type="video/mp4">
                 <source src="manhattansteakhouse_rev.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-                <source src="manhattansteakhouse_rev.ogv" type="video/ogg;">
                 Video not supported.
             </video>
         </section>
@@ -216,7 +191,7 @@
                     </div>
                     <div class="wrapper cf deactivated wine" id="wine">
                         <div class="bt-container">
-                            <! -- White Wines -->
+                            <!-- White Wines -->
                             <h4>White Wines by the Glass</h4>
                             <div class="bt-menu">
                                 <div class="bt-menu-item">
@@ -255,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <! -- Red Wines -->
+                        <!-- Red Wines -->
                         <div class="bt-container">
                             <h4 class="pt">Red Wines by the Glass</h4>
                             <div class="bt-menu">
@@ -301,7 +276,7 @@
                                 </div>
                             </div>
                         </div>
-                        <! -- Red Wines -->
+                        <!-- Red Wines -->
                     </div>
                 </div>
             </div>
@@ -313,7 +288,7 @@
                     </div>
                     <div class="wrapper cf deactivated1 wine">
                         <div class="bt-container">
-                            <! -- Appetizers - Salads -->
+                            <!-- Appetizers - Salads -->
                             <h4>Enjoy in our Restaurant</h4>
                             <div class="bt-menu">
                                 <div class="bt-menu-item">
@@ -387,7 +362,7 @@
                     </div>
                     <div class="wrapper cf deactivated2 wine">
                         <div class="bt-container">
-                            <! -- Classics House Specialties -->
+                            <!-- Classics House Specialties -->
                             <h4>USDA - PRIME - DRY - AGED BEST OF ALL CUTS</h4>
                             <div class="bt-menu">
                                 <div class="bt-menu-item">
@@ -443,7 +418,7 @@
                     </div>
                     <div class="wrapper cf deactivated3 wine">
                             <div class="bt-container">
-                                <! -- Entrees - Fish -->
+                                <!-- Entrees - Fish -->
                                 <h4>Enjoy in our Restaurant</h4>
                                 <div class="bt-menu">
                                     <div class="bt-menu-item">
@@ -523,7 +498,7 @@
                     </div>
                     <div class="wrapper cf deactivated4 wine">
                         <div class="bt-container">
-                            <! -- Side Dishes -->
+                            <!-- Side Dishes -->
                             <h4>Enjoy in our Restaurant</h4>
                             <div class="bt-menu">
                                 <div class="bt-menu-item">
@@ -585,7 +560,7 @@
                     </div>
                     <div class="wrapper cf deactivated5 wine">
                         <div class="bt-container">
-                            <! -- Desserts -->
+                            <!-- Desserts -->
                             <h4>Delicious sweets, baked up fresh each day by our awesome pastry chef.
                                 <br/> The perfect end to your meal!</h4>
                             <div class="bt-menu">
@@ -671,7 +646,7 @@
         <section id="contactform" class="passive">
             <div class="wrapper">
 
-                <div id="googleMap" class="animated" data-map-infowindow="Manhattan Steakhouse" style="width:99.9%; height:400px;"></div>
+                <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.2378632795678!2d-81.80865281349183!3d26.375814059554745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db176257b89b15%3A0xec372f28adf68492!2s24940+S+Tamiami+Trail+%23103%2C+Bonita+Springs%2C+FL+34134%2C+USA!5e0!3m2!1sen!2s!4v1435219091650" width="98%" height="500" frameborder="0" style="border-radius:5px" allowfullscreen></iframe>
 
                 <div id="title-message" class="passive">
                     <h1 class="animated">Send a Message</h1>
@@ -729,24 +704,18 @@
     <!-- page1 //////////////////////////////////////////////////////////////////////-->
 
 	<!-- Swiper JS -->
-    <script src="js/swiper.js"></script>
+    <script src="js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
         nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        loop: true,
-        autoplay: 3500,
-        keyboardControl: true,
-        setWrapperSize: true,
-        parallax: true,
-        speed: 1300
+        prevButton: '.swiper-button-prev'
     });
     </script>
     <!-- To Top JS -->
-    <script src="js/easing.js" type="text/javascript"></script>
+    <script src="js/easing.min.js" type="text/javascript"></script>
     <!-- UItoTop plugin -->
-    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>
     <!-- Starting the plugin -->
     <script type="text/javascript">
         $(document).ready(function() {
